@@ -88,8 +88,8 @@ function sendmail(){
         SecureToken : "34d6c81d-e64a-4bcf-8601-7e58fc6aa1b9",
         To : 'r69967652@gmail.com',
         From : "r69967652@gmail.com",
-        Subject : "hello",
-        Body : "name:"+username.value +"<br> emaiil : "+email.value+"<br> messages :"+messages.value        
+        Subject : subject.value,
+        Body : "name:"+username.value +"<br> emaiil : "+email.value+"<br> messages :"+messages.value+ "<br> phone:"+Phone.value      
     }   ).then(function(message){
         alert(message);
     });
